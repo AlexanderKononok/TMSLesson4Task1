@@ -18,10 +18,10 @@ class ViewController: UIViewController {
         
         let arrOfTuples: arrayOfTuples = [(1, "x"), (4, "y"), (6, "a")]
         
-        print(getReult(arr: arrOfTuples))
+        print(getResult(arr: arrOfTuples))
     }
     
-    func getReult(arr: arrayOfTuples) -> arrayOfTuples {
+    func getResult(arr: arrayOfTuples) -> arrayOfTuples {
      
         return arr.map({ ($0.0 * $0.0, $0.1) }).filter({ $0.0 % 2 == 0 }).sorted(by: { $0.1 < $1.1 })
     }
